@@ -36,37 +36,30 @@ a:hover {
   color: #00ADB5;
 }
 
+img {
+  opacity: 0.8;
+}
+
+img:hover {
+  opacity: 1;
+  transform: rotate(1deg) scale(1.1);
+  -webkit-transform: rotate(1deg) scale(1.1);
+  cursor: pointer;
+}
+
 table {
   margin: 10px;
 }
 
 /* Custom designs for classes */
 
-@media (max-width: 1280px) {
-  /* For a screen < 960px, this CSS will be read */
-  .card {
-    width: 300px;
-    height: 500px;
-  }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .card {
-    width: 200px;
-    height: 500px;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .card {
-    width: 100px;
-    height: 500px;
-  }
-}
-
 .container-left {
   float: left;
   margin: 10px;
+}
+
+.info-align-middle {
+  padding-top: 50px;
 }
 
 .card {
@@ -76,10 +69,28 @@ table {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin: 0px auto;
+  width: 350px;
+  height: 500px;
+}
+
+.info-align-middle {
+  padding-top: 50px;
 }
 
 .text-center {
   text-align: center;
+}
+
+.movies-table-center {
+  padding-left: 55px;
+}
+
+.teams-table-center {
+  padding-left: 30px;
+}
+
+.jams-table-center {
+  padding-left: 20px;
 }
 
 .list-inline {
@@ -138,9 +149,3 @@ table {
 #img-circle {
   border-radius: 50%
 }
-
-/*
-#profile_info {
-  background-image: url("../images/tokyo.jpg");
-}
-*/
